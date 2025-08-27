@@ -1,0 +1,1 @@
+print("Hello Everyone. Rain is pretty good and Wednesdays are okay.")
