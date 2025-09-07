@@ -7,8 +7,9 @@ tax = 1.07
 total_bill =  apple_price * number_purchased * tax
 if total_bill == 0:
     print("Total bill is zero, please check inputs.")
-print("You bought", number_purchased, "apples for", apple_price, "per apple.")
-print("Total bill:", total_bill, "\n")
+else:
+    print("You bought", number_purchased, "apples for", apple_price, "per apple.")
+    print("Total bill:", total_bill, "\n")
 
 # Programming Activity 2
 age = int(input("How old are you? "))
@@ -21,7 +22,7 @@ print("You have approximately", yearsLeft,
 userScore = int(input("What is your score as a percentage? (ex: 90)  "))
 if userScore >= 93:
     print("Congratulations you got an A")
-if userScore < 93:
+else:
     print("Congratulations, you still learned a ton!!!!")
 
 # Additional Challenge One
@@ -42,9 +43,9 @@ print("The largest number is", maxNum, "\n"
     "The smallest number is", minNum)
 if maxNum % 2 == 0:
     print("The range between the smallest and largest numbers is", minNum, "to", maxNum)
-if maxNum % 2 != 0:
+else:
     if minNum <= 10 and minNum >= 0:
         print("The smallest number", minNum, "is within range of 0 to 10")
-    if minNum < 0 or minNum > 10:
+    else:
         print("The smallest number", minNum, "is not within range of 0 to 10")
 
