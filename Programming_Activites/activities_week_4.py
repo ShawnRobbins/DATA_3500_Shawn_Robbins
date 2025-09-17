@@ -16,25 +16,22 @@
 # # Programming Activity 2
 # current_year = 2025
 # age = int(input("How old are you? "))
-# while age > 1:
+# while age >= 1:
 #     print("You were alive in year:", current_year)
 #     age -= 1
 #     current_year -= 1
 # else:
-#     current_year -= 1
-#     print("You were born in year:", current_year, '\n')
+#     print("You were born in", current_year, '\n')
 
-# # Programming activity 3
-# for i in range(5, 96):
-#     if i % 5 == 0:
-#         print(i)
+# Programming activity 3
+for i in range(5, 96, 5):
+    print(i)
 
 # # Programming activity 4
-# j = 5
-# while j < 96:
-#     if j % 5 == 0:
-#         print(j)
-#     j += 1
+j = 5
+while j < 96:
+    print(j)
+    j += 5
 
 # # Additional Challenge 1
 # '''
@@ -70,21 +67,27 @@
 
 # # Additional Challenge 2. Find all the prime numbers within a given range using a for loop
 import math
-print("Prime Number Finder\nPlease enter a range:")
+print("Prime Number Finder\nPlease enter a range.")
 range_start = int(input("From: "))
 range_end = int(input("To: "))
 
 for num in range(range_start, range_end+1):
-    is_prime = False
-    if num >= 1:
+    is_prime = True
+    if num <= 2:
+        is_prime = False
+    else:
         if num == 2:
-            print(num)
-        elif num % 2 != 0:
-            for i in range(3, int(math.sqrt(num)) + 1, 2):
-                if num % i != 0:
-                    print(num)
+            is_prime = True
+        else:
+            for i in range(2, int(math.sqrt(num)) + 1):
+                if num % i == 0:
+                    is_prime = False
+    if is_prime:
+        print(num)
+
                     
 
 
 
 # Additional Challenge 2.5. Write a Python program to reverse a given three or more digit integer WITHOUT using lists (hint, use // and % to isolate numbers)
+long_Num = int(input("\nEnter a 3 or more digit integer: "))
