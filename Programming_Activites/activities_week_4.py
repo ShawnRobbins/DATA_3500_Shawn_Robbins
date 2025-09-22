@@ -42,7 +42,6 @@ Continue until user guess correctly or quits
 Keep track of the number of guesses
 '''
 import random
-
 # Generate a random number between 1 and 100
 num_to_guess = random.randint(1, 100)
 user_guess = -1
