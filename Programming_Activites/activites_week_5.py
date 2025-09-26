@@ -73,6 +73,7 @@ Write a function named "welcome_fctn" which takes one argument, called "name".  
 - We don't need a return statement here, but keep in mind python does return nothing.
 - Call the function, welcome_fctn(<your_name>)
 """
+
 def welcome_fctn(name, age, favorite_color):
     welcome_message = "Welcome " + name + ", you are " + str(age) + " years old, and " + favorite_color + " is your favorite color."
     return(welcome_message)
